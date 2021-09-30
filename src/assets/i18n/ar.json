@@ -1,0 +1,143 @@
+{
+    "SIGNIN": {
+        "TITLE": "تسجيل الدخول",
+        "HI": "مرحبا",
+        "WELCOME_BACK": "مرحبا بعودتك",
+        "DONT_HAVE_AN_ACCOUNT": "ليس لديك حساب"
+    },
+    "SIGNUP": {
+        "TITLE": "سجل"
+    },
+    "FORGET_PASSWORD": {
+        "TITLE": "نسيت كلمة المرور",
+        "SUB_TITLE": "الرجاء إدخال عنوان البريد الإلكتروني الخاص بك. سوف تتلقى رابطًا لإنشاء كلمة مرور جديدة عبر البريد الإلكتروني."
+    },
+    "LANGUAGES": [
+        {
+            "lngCode": "ar",
+            "language": "عربى"
+        },
+        {
+            "lngCode": "de",
+            "language": "ألمانية"
+        },
+        {
+            "lngCode": "en",
+            "language": "الإنجليزية"
+        },
+        {
+            "lngCode": "es",
+            "language": "الأسبانية"
+        },
+        {
+            "lngCode": "fr",
+            "language": "فرنسي"
+        },
+        {
+            "lngCode": "ru",
+            "language": "الروسية"
+        }
+    ],
+    "MENUS": [
+        {
+            "title": "الصفحة الرئيسية",
+            "icon": "home",
+            "url": "tabs/home"
+        },
+        {
+            "title": "البحث عن الفنادق",
+            "icon": "business",
+            "url": "search"
+        },
+        {
+            "title": "قائمة الفنادق",
+            "icon": "reorder-four",
+            "url": "hotel-list"
+        },
+        {
+            "title": "تفاصيل الفندق",
+            "icon": "layers",
+            "url": "hotel-details"
+        },
+        {
+            "title": "المرشحات",
+            "icon": "filter",
+            "url": "filters"
+        },
+        {
+            "title": "عملة",
+            "icon": "cash",
+            "url": "currency"
+        },
+        {
+            "title": "رحلات",
+            "icon": "boat",
+            "url": "tabs/trips"
+        },
+        {
+            "title": "الملف الشخصي",
+            "icon": "person",
+            "url": "tabs/profile"
+        },
+        {
+            "title": "تعديل الملف الشخصي",
+            "icon": "create",
+            "url": "edit-profile"
+        },
+        {
+            "title": "المراجعات",
+            "icon": "chatbubble-ellipses",
+            "url": "reviews"
+        },
+        {
+            "title": "تأكيد الحجز",
+            "icon": "book",
+            "url": "booking-confirmation"
+        },
+        {
+            "title": "هبوط",
+            "icon": "paper-plane",
+            "url": "landing"
+        },
+        {
+            "title": "على متن الطائرة",
+            "icon": "map",
+            "url": "onboarding"
+        },
+        {
+            "title": "اختيار البطاقة",
+            "icon": "card",
+            "url": "card-selection"
+        },
+        {
+            "title": "عملية الشراء",
+            "icon": "file-tray-full",
+            "url": "purchase"
+        },
+        {
+            "title": "تسجيل الدخول",
+            "icon": "log-in",
+            "url": "signin"
+        },
+        {
+            "title": "سجل",
+            "icon": "person",
+            "url": "signup"
+        },
+        {
+            "title": "نسيت كلمة المرور",
+            "icon": "key",
+            "url": "forget-password"
+        },
+        {
+            "title": "الإعدادات",
+            "icon": "settings",
+            "url": "settings"
+        },
+        {
+            "title": "اللغات",
+            "icon": "language",
+            "url": "settings-language"
+        }
+    ]
+}

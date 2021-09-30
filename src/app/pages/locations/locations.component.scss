@@ -1,0 +1,35 @@
+.section1 {
+    background: var(--ion-color-color1) !important;
+}
+
+ion-thumbnail {
+    width: 60px;
+    height: 40px;
+
+    img {
+        width: 60px;
+        height: 40px;
+        border-radius: 5px;
+    }
+}
+
+.name {
+    font-size: 1.2rem;
+    line-height: 2.5;
+    font-weight: 600;
+    color: #6b6b6b;
+}
+
+ion-item-divider {
+    --background: var(--ion-color-color1);
+    --color: #ffffff;
+}
+
+ion-searchbar {
+    --icon-color: var(--ion-color-color1);
+    --placeholder-color: var(--ion-color-color1);
+    --background: #fff;
+    --color: var(--ion-color-color1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

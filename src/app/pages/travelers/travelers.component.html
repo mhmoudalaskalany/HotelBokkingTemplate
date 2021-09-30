@@ -1,0 +1,100 @@
+<!--
+  - Travelers Screen
+  - @author    FlawlessThemes <flawlesstemplates@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   FlawlessThemes
+-->
+
+<!-- Header -->
+<ion-header class="ion-no-border">
+  <ion-toolbar color="color1">
+
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-button color="light" (click)="dismiss()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title>Travelers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Adults -->
+  <ion-item lines="none">
+    <ion-label>Adults</ion-label>
+
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <ion-col (click)="totalAdults = totalAdults + 1">
+        <ion-icon style="zoom:2.0;" name="add-circle-outline" color="medium"></ion-icon>
+      </ion-col>
+
+      <ion-col class="ion-text-center">{{totalAdults}}</ion-col>
+
+      <ion-col (click)="totalAdults > 1 && totalAdults = totalAdults - 1">
+        <ion-icon style="zoom:2.0;" name="remove-circle-outline" color="medium"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+
+  <!-- Youths -->
+  <ion-item lines="none">
+    <ion-label>Youths</ion-label>
+
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <ion-col (click)="totalYouths = totalYouths + 1">
+        <ion-icon style="zoom:2.0;" name="add-circle-outline" color="medium"></ion-icon>
+      </ion-col>
+
+      <ion-col class="ion-text-center">{{totalYouths}}</ion-col>
+
+      <ion-col (click)="totalYouths > 0 && totalYouths = totalYouths -1">
+        <ion-icon style="zoom:2.0;" name="remove-circle-outline" color="medium"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+
+  <!-- Children -->
+  <ion-item lines="none">
+    <ion-label>Children</ion-label>
+
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <ion-col (click)="totalChildren = totalChildren + 1">
+        <ion-icon style="zoom:2.0;" name="add-circle-outline" color="medium"></ion-icon>
+      </ion-col>
+
+      <ion-col class="ion-text-center">{{totalChildren}}</ion-col>
+
+      <ion-col (click)="totalChildren > 0 && totalChildren = totalChildren -1">
+        <ion-icon style="zoom:2.0;" name="remove-circle-outline" color="medium"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+
+  <!-- Infants -->
+  <ion-item lines="none">
+    <ion-label>Infants</ion-label>
+
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <ion-col (click)="totalInfants = totalInfants +1">
+        <ion-icon style="zoom:2.0;" name="add-circle-outline" color="medium"></ion-icon>
+      </ion-col>
+
+      <ion-col class="ion-text-center">{{totalInfants}}</ion-col>
+
+      <ion-col (click)="totalInfants > 0 && totalInfants = totalInfants -1">
+        <ion-icon style="zoom:2.0;" name="remove-circle-outline" color="medium"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+</ion-content>
+
+<!-- Footer -->
+<ion-footer class="ion-no-border">
+  <div class="ion-padding">
+    <ion-button color="color1" expand="block" (click)="apply()">
+      Done</ion-button>
+  </div>
+</ion-footer>

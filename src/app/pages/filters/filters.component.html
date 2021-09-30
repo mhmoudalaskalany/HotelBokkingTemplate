@@ -1,0 +1,71 @@
+<!-- Header -->
+<ion-header class="ion-no-border">
+  <ion-toolbar color="color1">
+
+    <!-- Title -->
+    <ion-title>Filters</ion-title>
+
+    <!-- Submit Button -->
+    <ion-buttons slot="end">
+      <ion-button routerLink="/tabs/home" routerDirection="root">
+        <ion-icon name="close" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content [fullscreen]="true" class="background">
+  <ion-list>
+    <!-- Price -->
+    <ion-list-header>
+      <ion-label>
+        <ion-text color="medium">Price</ion-text>
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item lines="none">
+      <ion-range color="color1" id="dual-range" dual-knobs pin min="100" max="1000" step="1" [(ngModel)]="knobValues">
+      </ion-range>
+    </ion-item>
+
+    <!-- Popular Filters -->
+    <ion-list-header>
+      <ion-label>
+        <ion-text color="medium">Popular Filters</ion-text>
+      </ion-label>
+    </ion-list-header>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-no-padding" sizeLg="2" sizeMd="4" sizeXs="6" *ngFor="let item of popularFilters">
+          <ion-item lines="none">
+            <ion-label>{{item.val}}</ion-label>
+            <ion-checkbox color="color1" slot="end" [(ngModel)]="item.isChecked"></ion-checkbox>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- type of accommodation -->
+    <ion-list-header>
+      <ion-label>
+        <ion-text color="medium">Type of Accommodation</ion-text>
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item lines="none" *ngFor="let item of accommodation">
+      <ion-label>{{item.val}}</ion-label>
+      <ion-toggle color="color1" [(ngModel)]="item.isChecked"></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+<ion-footer class="ion-no-border">
+  <div class="ion-padding">
+    <ion-button color="color1" expand="full" shape="round" (click)="apply()">
+      Apply
+    </ion-button>
+  </div>
+</ion-footer>

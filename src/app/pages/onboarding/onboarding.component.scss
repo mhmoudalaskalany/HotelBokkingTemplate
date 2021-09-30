@@ -1,0 +1,62 @@
+.swiper-slide {
+    display: block;
+}
+
+.swiper-container {
+    height: 100%;
+}
+
+ion-slides {
+    --bullet-background: var(--ion-color-color1);
+    --bullet-background-active: var(--ion-color-color1);
+}
+
+ion-header {
+    z-index: auto;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+ion-menu-button {
+    color: var(--ion-color-color1);
+}
+
+.section1 {
+    height: auto;
+    padding-top: 15px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.section2 {
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+}
+
+.section3 {
+    padding: 10px;
+    bottom: 25px;
+    position: absolute;
+    width: 100%;
+
+    p {
+        font-size: 1.2rem;
+        color: #6d6b6b;
+        font-weight: 500;
+    }
+
+    ion-button {
+        width: 100%;
+    }
+}

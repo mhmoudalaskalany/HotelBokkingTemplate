@@ -1,0 +1,44 @@
+<!--
+  - Booking Confirmation Screen
+  - @author    FlawlessThemes <flawlesstemplates@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   FlawlessThemes
+-->
+
+
+<!-- Header -->
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar color="color1">
+
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-button color="light" routerLink="/tabs/home" routerDirection="root">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title>Booking Confirmation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="booking-confirmation" [fullscreen]="true">
+  <ion-grid class="ion-padding" style="height: 100%">
+    <ion-row class="ion-align-items-center ion-justify-content-center" style="height: 100%; flex-direction: column">
+      <div class="ion-text-center ion-padding">
+        <ion-icon name="checkmark-circle" style="zoom:6.0;" color="light"></ion-icon>
+        <h1>Congratulations!</h1>
+        <p>You have successfully booked your Hotel</p>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+<ion-footer class="ion-no-border">
+  <div class="ion-padding">
+    <ion-button color="light" expand="full" shape="round" (click)="gotoHomePage()">
+      Continue
+    </ion-button>
+  </div>
+</ion-footer>

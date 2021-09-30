@@ -1,0 +1,32 @@
+<!-- Header -->
+<ion-header class="ion-no-border">
+  <ion-toolbar color="color1">
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-button color="light" routerLink="/tabs/home" routerDirection="root">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <!-- Title -->
+    <ion-title>Reviews</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content [fullscreen]="true" class="background">
+  <ion-list lines="full">
+    <ion-item *ngFor="let item of reviews">
+      <ion-avatar slot="start">
+        <img [src]="item.image">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{item.name}}</h2>
+        <h3>{{item.updateDate}}</h3>
+        <p class="ion-text-wrap">{{item.details}}</p>
+        <br />
+        <ion-button color="color1" size="small" shape="round" fill="outline">Reply</ion-button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

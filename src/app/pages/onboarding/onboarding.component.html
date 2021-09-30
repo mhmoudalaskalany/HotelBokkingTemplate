@@ -1,0 +1,93 @@
+<!--
+  - Onboarding Screen
+  - @author    FlawlessThemes <flawlesstemplates@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   FlawlessThemes
+-->
+
+<ion-content [fullscreen]="true" scroll-y="false">
+
+  <ion-slides pager [options]="slideOpts">
+
+    <!-- Slider 1 -->
+    <ion-slide>
+      <div class="section1">
+        <img src="assets/images/onboarding1.jpg" />
+      </div>
+
+      <div class="section2">
+        <h2>Plan a Trip</h2>
+        <ion-text color="medium">You can select the date and also we can help you by suggesting you to set a good
+          schedule</ion-text>
+      </div>
+
+      <div class="section3">
+        <!-- Buttons -->
+        <ion-row class="ion-padding ion-align-items-center ion-justify-content-center">
+          <ion-button expand="full" color="color1" shape="round" (click)="gotoSignInPage()">
+            Log in
+          </ion-button>
+
+          <ion-button expand="full" color="light" shape="round" (click)="gotoSignupPage()">
+            <ion-text color="color1">Create account</ion-text>
+          </ion-button>
+        </ion-row>
+      </div>
+    </ion-slide>
+    <!-- End Slider 1 -->
+
+    <!-- Slider 2 -->
+    <ion-slide>
+      <div class="section1">
+        <img class="ion-padding" src="assets/images/onboarding2.jpg" />
+      </div>
+
+      <div class="section2">
+        <h2>Book a Hotel</h2>
+        <ion-text color="medium">Found a hotel that matches your destination and schedule? Book it instantly in juts a
+          few taps</ion-text>
+      </div>
+
+      <div class="section3">
+        <!-- Buttons -->
+        <ion-row class="ion-padding ion-align-items-center ion-justify-content-center">
+          <ion-button expand="full" color="color1" shape="round" (click)="gotoSignInPage()">
+            Log in
+          </ion-button>
+
+          <ion-button expand="full" color="light" shape="round" (click)="gotoSignupPage()">
+            <ion-text color="color1">Create account</ion-text>
+          </ion-button>
+        </ion-row>
+      </div>
+    </ion-slide>
+    <!-- End Slider 3 -->
+
+    <!-- Slider 3 -->
+    <ion-slide>
+      <div class="section1">
+        <img class="ion-padding" src="assets/images/onboarding3.jpg" />
+      </div>
+
+      <div class="section2">
+        <h2>Enjoy your Trip</h2>
+        <ion-text color="medium">Easy discovering new places and share these between your friends and travel together
+        </ion-text>
+      </div>
+
+      <div class="section3">
+        <!-- Buttons -->
+        <ion-row class="ion-padding ion-align-items-center ion-justify-content-center">
+          <ion-button expand="full" color="color1" shape="round" (click)="gotoSignInPage()">
+            Log in
+          </ion-button>
+
+          <ion-button expand="full" color="light" shape="round" (click)="gotoSignupPage()">
+            <ion-text color="color1">Create account</ion-text>
+          </ion-button>
+        </ion-row>
+      </div>
+    </ion-slide>
+    <!-- End Slider 3 -->
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,85 @@
+ion-header {
+    z-index: auto;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+ion-content.background {
+    --background: #f7f7f7 !important;
+
+    .hotel-img {
+        margin-top: -56px;
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0.25);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 270px;
+        width: 100%;
+    }
+
+    .section1 {
+        margin-top: 60px;
+
+        .name {
+            font-size: 1.5rem;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+
+        .address {
+            font-size: 1rem;
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+    }
+
+    ion-img {
+        width: 80px;
+    }
+
+    ion-card {
+        top: -50px;
+
+        .card-data {
+
+            --background: #ffffff !important;
+        }
+    }
+
+
+    #purchase-info {
+        margin-top: -50px;
+
+        ion-list {
+            background: #f7f7f7;
+        }
+
+        ion-item {
+            --background: #f7f7f7;
+
+            p {
+                font-size: 16px;
+                color: #5d5b5b;
+                line-height: 2rem;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+ion-footer {
+    background: #ffffff;
+}

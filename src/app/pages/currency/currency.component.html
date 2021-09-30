@@ -1,0 +1,24 @@
+<!-- Header -->
+<ion-header class="ion-no-border">
+  <ion-toolbar color="color1">
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-button color="light" routerLink="/tabs/home" routerDirection="root">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <!-- Title -->
+    <ion-title>Currency</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content [fullscreen]="true" class="background">
+  <ion-list lines="full" class="ion-padding-top">
+    <ion-item *ngFor="let item of currencies">
+      <ion-text color="medium" slot="end">{{item.currencies[0].code}}</ion-text>
+      <ion-label class="ion-padding">{{item.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

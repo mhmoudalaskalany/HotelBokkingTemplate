@@ -1,0 +1,42 @@
+<!--
+  - Locations Screen
+  - @author    FlawlessThemes <flawlesstemplates@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   FlawlessThemes
+-->
+
+<!-- Header -->
+<ion-header class="ion-no-border">
+  <ion-toolbar color="color1">
+
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-button color="light" (click)="dismiss()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="section1">
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Search ..."></ion-searchbar>
+
+    <ion-item-divider>
+      <ion-label>Popular Countries</ion-label>
+    </ion-item-divider>
+  </ion-grid>
+
+  <ion-list lines="full" class="ion-padding-top">
+    <ion-item *ngFor="let item of locations" (click)="selectLocation(item)">
+      <ion-thumbnail slot="start">
+        <img style="vertical-align: middle;" [src]="item.flag">
+      </ion-thumbnail>
+
+      <ion-label class="ion-text-wrap name">{{item.name}} ({{item.alpha3Code}})</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

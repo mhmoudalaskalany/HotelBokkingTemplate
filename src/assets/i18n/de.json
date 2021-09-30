@@ -1,0 +1,143 @@
+{
+    "SIGNIN": {
+        "TITLE": "EINLOGGEN",
+        "HI": "Hallo",
+        "WELCOME_BACK": "Willkommen zurück",
+        "DONT_HAVE_AN_ACCOUNT": "Ich habe kein Konto"
+    },
+    "SIGNUP": {
+        "TITLE": "ANMELDEN"
+    },
+    "FORGET_PASSWORD": {
+        "TITLE": "PASSWORT VERGESSEN",
+        "SUB_TITLE": "Geben Sie bitte Ihre Email-Adresse ein. Sie erhalten einen Link zum Erstellen eines neuen Passworts per E-Mail."
+    },
+    "LANGUAGES": [
+        {
+            "lngCode": "ar",
+            "language": "Arabisch"
+        },
+        {
+            "lngCode": "de",
+            "language": "Deutsche"
+        },
+        {
+            "lngCode": "en",
+            "language": "Englisch"
+        },
+        {
+            "lngCode": "es",
+            "language": "Spanisch"
+        },
+        {
+            "lngCode": "fr",
+            "language": "Französisch"
+        },
+        {
+            "lngCode": "ru",
+            "language": "Russisch"
+        }
+    ],
+    "MENUS": [
+        {
+            "title": "Zuhause",
+            "icon": "home",
+            "url": "tabs/home"
+        },
+        {
+            "title": "Hotels suchen",
+            "icon": "business",
+            "url": "search"
+        },
+        {
+            "title": "Hotelliste",
+            "icon": "reorder-four",
+            "url": "hotel-list"
+        },
+        {
+            "title": "Hoteldetails",
+            "icon": "layers",
+            "url": "hotel-details"
+        },
+        {
+            "title": "Filter",
+            "icon": "filter",
+            "url": "filters"
+        },
+        {
+            "title": "Währung",
+            "icon": "cash",
+            "url": "currency"
+        },
+        {
+            "title": "Reisen",
+            "icon": "boat",
+            "url": "tabs/trips"
+        },
+        {
+            "title": "Profil",
+            "icon": "person",
+            "url": "tabs/profile"
+        },
+        {
+            "title": "Profil bearbeiten",
+            "icon": "create",
+            "url": "edit-profile"
+        },
+        {
+            "title": "Bewertungen",
+            "icon": "chatbubble-ellipses",
+            "url": "reviews"
+        },
+        {
+            "title": "Buchungsbestätigung",
+            "icon": "book",
+            "url": "booking-confirmation"
+        },
+        {
+            "title": "Landung",
+            "icon": "paper-plane",
+            "url": "landing"
+        },
+        {
+            "title": "Onboarding",
+            "icon": "map",
+            "url": "onboarding"
+        },
+        {
+            "title": "Kartenauswahl",
+            "icon": "card",
+            "url": "card-selection"
+        },
+        {
+            "title": "Kauf",
+            "icon": "file-tray-full",
+            "url": "purchase"
+        },
+        {
+            "title": "Anmelden",
+            "icon": "log-in",
+            "url": "signin"
+        },
+        {
+            "title": "Anmelden",
+            "icon": "person",
+            "url": "signup"
+        },
+        {
+            "title": "Passwort vergessen",
+            "icon": "key",
+            "url": "forget-password"
+        },
+        {
+            "title": "die Einstellungen",
+            "icon": "settings",
+            "url": "settings"
+        },
+        {
+            "title": "Sprachen",
+            "icon": "language",
+            "url": "settings-language"
+        }
+    ]
+}

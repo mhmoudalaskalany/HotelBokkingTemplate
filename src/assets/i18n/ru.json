@@ -1,0 +1,143 @@
+{
+    "SIGNIN": {
+        "TITLE": "se connecter",
+        "HI": "salut",
+        "WELCOME_BACK": "Nous saluons le retour",
+        "DONT_HAVE_AN_ACCOUNT": "je n'ai pas de compte"
+    },
+    "SIGNUP": {
+        "TITLE": "s'inscrire"
+    },
+    "FORGET_PASSWORD": {
+        "TITLE": "ЗАБЫТЬ ПАРОЛЬ",
+        "SUB_TITLE": "Пожалуйста, введите Ваш адрес электронной почты. Вы получите ссылку для создания нового пароля по электронной почте."
+    },
+    "LANGUAGES": [
+        {
+            "lngCode": "ar",
+            "language": "арабский"
+        },
+        {
+            "lngCode": "de",
+            "language": "Немецкий"
+        },
+        {
+            "lngCode": "en",
+            "language": "английский"
+        },
+        {
+            "lngCode": "es",
+            "language": "испанский язык"
+        },
+        {
+            "lngCode": "fr",
+            "language": "Французский"
+        },
+        {
+            "lngCode": "ru",
+            "language": "русский"
+        }
+    ],
+    "MENUS": [
+        {
+            "title": "Домой",
+            "icon": "home",
+            "url": "tabs/home"
+        },
+        {
+            "title": "Поиск отелей",
+            "icon": "business",
+            "url": "search"
+        },
+        {
+            "title": "Список отелей",
+            "icon": "reorder-four",
+            "url": "hotel-list"
+        },
+        {
+            "title": "Детали отеля",
+            "icon": "layers",
+            "url": "hotel-details"
+        },
+        {
+            "title": "Фильтры",
+            "icon": "filter",
+            "url": "filters"
+        },
+        {
+            "title": "валюта",
+            "icon": "cash",
+            "url": "currency"
+        },
+        {
+            "title": "Поездки",
+            "icon": "boat",
+            "url": "tabs/trips"
+        },
+        {
+            "title": "Профиль",
+            "icon": "person",
+            "url": "tabs/profile"
+        },
+        {
+            "title": "Редактировать профиль",
+            "icon": "create",
+            "url": "edit-profile"
+        },
+        {
+            "title": "Отзывы",
+            "icon": "chatbubble-ellipses",
+            "url": "reviews"
+        },
+        {
+            "title": "Подтверждение бронирования",
+            "icon": "book",
+            "url": "booking-confirmation"
+        },
+        {
+            "title": "Посадка",
+            "icon": "paper-plane",
+            "url": "landing"
+        },
+        {
+            "title": "Адаптация",
+            "icon": "map",
+            "url": "onboarding"
+        },
+        {
+            "title": "Выбор карты",
+            "icon": "card",
+            "url": "card-selection"
+        },
+        {
+            "title": "Покупка",
+            "icon": "file-tray-full",
+            "url": "purchase"
+        },
+        {
+            "title": "Войти в систему",
+            "icon": "log-in",
+            "url": "signin"
+        },
+        {
+            "title": "Зарегистрироваться",
+            "icon": "person",
+            "url": "signup"
+        },
+        {
+            "title": "Забыть пароль",
+            "icon": "key",
+            "url": "forget-password"
+        },
+        {
+            "title": "Настройки",
+            "icon": "settings",
+            "url": "settings"
+        },
+        {
+            "title": "Языки",
+            "icon": "language",
+            "url": "settings-language"
+        }
+    ]
+}

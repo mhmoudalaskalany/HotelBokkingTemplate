@@ -1,0 +1,106 @@
+<!--
+  - SignUp Screen
+  - @author    FlawlessThemes <flawlesstemplates@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   FlawlessThemes
+-->
+
+<!-- Header -->
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+
+    <!-- Back Buttons -->
+    <ion-buttons slot="start">
+      <ion-button color="dark" routerLink="/landing" routerDirection="root">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content id="signup" [fullscreen]="true" class="ion-padding">
+  <div id="section1">
+    <!-- Signup Form -->
+    <form>
+      <ion-grid>
+        <ion-row class="ion-align-items-center ion-justify-content-center">
+          <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+
+            <!-- Title -->
+            <div class="ion-padding">
+              <h2>Create New Account</h2>
+            </div>
+
+            <ion-row>
+              <ion-col>
+                <ion-button expand="full" color="primary" shape="round">
+                  Facebook
+                </ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button expand="full" color="secondary" shape="round">
+                  Twitter
+                </ion-button>
+              </ion-col>
+            </ion-row>
+
+            <div class="ion-padding ion-text-center">
+              <ion-text color="medium">or sign up with email</ion-text>
+            </div>
+
+            <!-- Name -->
+            <div class="ion-padding-bottom ion-padding-top">
+              <ion-item lines="none">
+                <ion-label>
+                  <ion-icon name="person"></ion-icon>
+                </ion-label>
+                <ion-input type="text" placeholder="Name" name="name"></ion-input>
+              </ion-item>
+            </div>
+
+            <!-- Email -->
+            <div class="ion-padding-bottom">
+              <ion-item lines="none">
+                <ion-label>
+                  <ion-icon name="mail"></ion-icon>
+                </ion-label>
+                <ion-input type="email" placeholder="Email" name="email"></ion-input>
+              </ion-item>
+            </div>
+
+
+            <!-- Password -->
+            <ion-item lines="none">
+              <ion-label>
+                <ion-icon name="eye"></ion-icon>
+              </ion-label>
+              <ion-input type="password" placeholder="Password" name="password">
+              </ion-input>
+            </ion-item>
+
+            <!-- Signup Button -->
+            <div class="buttons ion-padding">
+              <ion-button shape="round" expand="full" color="color1" (click)="gotoHomePage()">
+                <ion-text><strong>{{ 'SIGNUP.TITLE' | translate }}</strong></ion-text>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+    <!-- End Signup Form -->
+  </div>
+
+  <!-- SignUp Buttons -->
+  <div id="section2">
+    <ion-button fill="clear" color="dark" (click)="gotoSignInPage()">
+      <ion-text color="medium">Already have an account? <ion-text color="color1">
+          <b>Sign In</b>
+        </ion-text>
+      </ion-text>
+    </ion-button>
+  </div>
+</ion-content>

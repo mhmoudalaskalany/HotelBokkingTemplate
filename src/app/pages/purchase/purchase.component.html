@@ -1,0 +1,145 @@
+<!--
+  - Purchase Screen
+  - @author    FlawlessThemes <flawlesstemplates@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   FlawlessThemes
+-->
+
+
+<!-- Header -->
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-button color="color1" routerLink="/tabs/home" routerDirection="root">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content [fullscreen]="true" class="background">
+
+  <img class="hotel-img" [src]="hotelDetails.images[0]">
+
+  <div class="layer">
+    <ion-grid class="ion-padding section1">
+      <ion-row class="ion-align-items-center ion-justify-content-center" style="flex-direction: column">
+        <div class="ion-text-center ion-padding">
+          <ion-label class="ion-text-wrap">
+            <h4 class="name">{{hotelDetails.name}}</h4>
+            <p class="address">{{hotelDetails.address}}</p>
+          </ion-label>
+        </div>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+  <ion-card>
+    <ion-item class="card-data" lines="none">
+      <ion-img class="ion-padding-end" style="vertical-align: middle;" [src]="cardData.img">
+      </ion-img>
+
+      <ion-label class="ion-text-wrap ion-padding">
+        <h2 class="name">{{cardData.name}}</h2>
+        <ion-text color="medium">{{cardData.cardNumber}}</ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <div id="purchase-info">
+    <!-- Date & Times -->
+    <ion-row>
+      <ion-col size="6">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label>
+              <p>Check in</p>
+              <h1>{{hotelDetails.checkIn | date}}</h1>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label>
+              <p>Check out</p>
+              <h1>{{hotelDetails.checkOut | date}}</h1>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <!-- Total Passenger  -->
+      <ion-col size="6">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label>
+              <p>Total Passenger</p>
+              <h1>{{hotelDetails.totalPassenger}}</h1>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+
+      <!-- Hotel Type -->
+      <ion-col size="6">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label>
+              <p>Hotel Type</p>
+              <h1>{{hotelDetails.hotelType}}</h1>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <!-- Hotel Overview -->
+    <ion-row class="ion-padding">
+      <ion-list-header class="ion-no-padding">
+        <ion-label>
+          <ion-text color="medium">Overview</ion-text>
+        </ion-label>
+      </ion-list-header>
+
+      <ion-text>{{hotelDetails.overview}}</ion-text>
+
+      <!-- Hotel Amenities -->
+      <ion-list-header class="ion-no-padding">
+        <ion-label color="medium">Amenities</ion-label>
+      </ion-list-header>
+
+      <ion-chip *ngFor="let item of hotelDetails.amenities" color="medium">
+        <i class="{{item.icon}}" aria-hidden="true"></i> &nbsp;
+        <ion-label>{{item.name}}</ion-label>
+      </ion-chip>
+    </ion-row>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <!-- Price -->
+  <ion-row>
+    <ion-col>
+      <ion-list lines="none">
+        <ion-item>
+          <h1>Price</h1>
+          <h1 slot="end">$300</h1>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+
+  <div class="ion-padding">
+    <ion-button color="color1" expand="full" shape="round" (click)="gotoBookingConfirmation()">
+      Purchase
+    </ion-button>
+  </div>
+</ion-footer>

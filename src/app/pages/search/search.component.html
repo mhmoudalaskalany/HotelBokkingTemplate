@@ -1,0 +1,137 @@
+<!--
+  - Search Hotel Screen
+  - @author    FlawlessThemes <flawlesstemplates@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   FlawlessThemes
+-->
+
+<!-- Header -->
+<ion-header class="ion-no-border">
+  <ion-toolbar color="color1">
+
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-button color="light" routerLink="/tabs/home" routerDirection="root">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title>Search Hotels</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<!-- Contents -->
+<ion-content [fullscreen]="true">
+  <ion-grid class="section1">
+    <form>
+      <!-- Destination -->
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col>
+          <ion-item (click)="getDestination()">
+            <ion-label position="stacked">Enter your destination</ion-label>
+            <ion-input type="text" placeholder="Destination" name="destination"
+              [(ngModel)]="hotelSearchData.destination"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <!-- End Destination -->
+
+      <!--  Check In & Out -->
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col size="5.5">
+          <ion-item>
+            <ion-label position="stacked">Check In</ion-label>
+            <ion-input type="text" placeholder="Check In" name="checkIn" [(ngModel)]="hotelSearchData.checkIn"
+              (ionFocus)="getCheckIn()"></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col size="1">
+          <ion-icon color="light" name="calendar"></ion-icon>
+        </ion-col>
+
+        <ion-col size="5.5">
+          <ion-item>
+            <ion-label position="stacked">Check Out</ion-label>
+            <ion-input type="text" placeholder="Check Out" name="checkOut" [(ngModel)]="hotelSearchData.checkOut"
+              (ionFocus)="getCheckIn()"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-padding-bottom">
+
+        <!-- Travelers -->
+        <ion-col class="ion-align-self-center">
+          <ion-item lines="none">
+            <ion-label position="stacked">Travelers</ion-label>
+            <ion-input (ionFocus)="openTravelerPage()">{{hotelSearchData.totalPassenger}} Travelers</ion-input>
+          </ion-item>
+        </ion-col>
+
+        <!-- Rooms -->
+        <ion-col class="ion-align-self-center">
+          <ion-item lines="none">
+            <ion-label position="stacked">Rooms</ion-label>
+            <ion-select value="1" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="1">1</ion-select-option>
+              <ion-select-option value="2">2</ion-select-option>
+              <ion-select-option value="3">3</ion-select-option>
+              <ion-select-option value="4">4</ion-select-option>
+              <ion-select-option value="5">5</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </form>
+    <!-- End RoundTrip Form -->
+  </ion-grid>
+
+  <ion-row class="submit-btn ion-padding ion-align-items-center ion-justify-content-center">
+    <ion-button color="color1" expand="full" shape="round" (click)="gotoHotelListPage()">Search Hotels</ion-button>
+  </ion-row>
+
+  <!-- List of Hotels -->
+  <div id="popular_hotels">
+    <ion-list-header>
+      <ion-label color="dark">Popular Hotels</ion-label>
+      <ion-button color="color1" (click)="gotoHotelListPage()">See All</ion-button>
+    </ion-list-header>
+
+    <ion-card *ngFor="let item of hotels">
+      <ion-list lines="none">
+        <ion-item class="ion-no-padding border" (click)="gotoHotelListPage()">
+
+          <!-- Image -->
+          <ion-thumbnail slot="start">
+            <img class="packages_thumbnail" style="vertical-align: middle;" [src]="item.images[0]">
+          </ion-thumbnail>
+
+          <ion-label class="ion-text-wrap">
+            <h4 class="name">{{item.name}}</h4>
+            <ion-text color="medium">
+              <ion-icon color="medium" name="location"></ion-icon> {{item.address}}
+            </ion-text>
+
+            <br>
+
+            <ion-text color="color1">${{item.price}}/night</ion-text>
+
+            <p class="ion-padding-top">
+              <ion-icon name="person"></ion-icon> {{item.totalPerson}} &nbsp;
+              <ion-icon name="briefcase"></ion-icon> {{item.suitcases}} &nbsp;
+              <ion-icon name="logo-slack"></ion-icon> {{item.seats}} &nbsp;
+              <ion-icon name="copy"></ion-icon> {{item.doorCount}}
+            </p>
+          </ion-label>
+
+          <ion-card>
+            Book Now
+          </ion-card>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  </div>
+</ion-content>
