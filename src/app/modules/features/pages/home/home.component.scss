@@ -70,7 +70,6 @@ ion-content.background {
                 color: white;
                 text-shadow: 0 1px 0 black;
 
-
                 h2 {
                     font-size: 14px;
                 }
@@ -79,6 +78,10 @@ ion-content.background {
     }
 
     #hot_packages {
+        .items {
+            display: flex;
+            flex-direction: column;
+        }
         .item {
             ion-thumbnail {
                 width: 100px;
