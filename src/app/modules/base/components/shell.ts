@@ -1,0 +1,8 @@
+import { Injector } from '@angular/core';
+import { SessionManager } from 'core/services/guards/session-manager';
+
+export class Shell {
+  // injector to get instance of services without constructor injection
+  public static Injector: Injector;
+
+}
