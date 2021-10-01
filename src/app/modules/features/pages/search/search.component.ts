@@ -12,7 +12,7 @@ import { ModalController } from '@ionic/angular';
 import { LocationsComponent } from '../locations/locations.component';
 import { TravelersComponent } from '../travelers/travelers.component';
 import { Router } from '@angular/router';
-import { DataService } from '../../services/data.service';
+import { DataService } from 'features/services/data.service';
 
 @Component({
   selector: 'app-search',

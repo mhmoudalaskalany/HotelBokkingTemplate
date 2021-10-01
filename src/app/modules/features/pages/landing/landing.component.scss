@@ -11,9 +11,8 @@ ion-menu-button {
     color: var(--ion-color-primary-contrast);
 }
 
-
 ion-content.background {
-    --background: url(../../../assets/images/landing-background.jpg) no-repeat center center / cover;
+    --background: url("/assets/images/landing-background.jpg") no-repeat center center / cover;
 
     .section1 {
         height: 30%;
