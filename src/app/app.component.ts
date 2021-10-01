@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Injector } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router } from '@angular/router';
+import { Shell } from 'base/components/shell';
 
 @Component({
   selector: 'app-root',
@@ -16,12 +17,14 @@ export class AppComponent {
   selectedMenu: any;
 
   constructor(
+    public inj: Injector,
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
     private translate: TranslateService,
     private router: Router
   ) {
+    Shell.Injector = inj;
     this.initializeApp();
   }
 
